@@ -1,0 +1,63 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.error-page {
+    height: 100vh;
+    display: flex;
+}
+
+.error-page .info {
+    flex: 1;
+}
+
+.error-page .info .text {
+    max-width: 35%;
+    top: 14%;
+    position: absolute;
+    left: 6%;
+}
+
+@media (max-width: 767px) {
+    .perror-page .info .text {
+        max-width: 70%;
+        top: 15%;
+        position: absolute;
+        left: 6%;
+    }
+}
+
+
+.error-page .info .text p{
+    position: relative;
+    font-weight: 400;
+    font-size: 140px;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.error-page .info .text p::after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 80px;
+    bottom: 0;
+    left: 0;
+    background-color: #3F51B5;
+}
+
+.error-page .info .text a{
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+    border: 2px solid #eeeded;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+
+.error-page .info .text span{
+    font-size: 30px;
+    display: block;
+    margin-bottom: 30px;
+}

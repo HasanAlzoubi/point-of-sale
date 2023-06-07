@@ -1,0 +1,57 @@
+
+.login-page {
+    background-color: #eee !important;
+}
+
+.login-page .login-box {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+}
+
+.login-page .login-box .login-logo {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.login-page .login-box .login-logo p{
+    color: #3c8dbc !important;
+}
+
+.login-page .login-box-body {
+    background-color: white;
+    padding: 20px;
+}
+
+.login-page .login-box-body .login-box-msg {
+    text-align: center;
+    font-size: 16px;
+}
+
+@media (min-width: 493px) {
+    .login-page .login-box-body .login-box-msg {
+        margin-bottom: 20px;
+    }
+}
+
+
+.lock {
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
