@@ -13,6 +13,14 @@ use Intervention\Image\Facades\Image;
 class ProductController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('permission:products_create')->only(['create','store']);
+        $this->middleware('permission:products_read')->only('index');
+        $this->middleware('permission:products_update')->only(['edit', 'update']);
+        $this->middleware('permission:products_delete')->only('destroy');
+    }
+
     public function index(Request $request)
     {
         $categories = Category::all();

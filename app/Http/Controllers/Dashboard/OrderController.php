@@ -9,6 +9,13 @@ use Illuminate\Http\Request;
 class OrderController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('permission:orders_read')->only('index');
+        $this->middleware('permission:orders_delete')->only('destroy');
+    }
+
+
     public function index(Request $request)
     {
 
