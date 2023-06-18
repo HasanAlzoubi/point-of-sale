@@ -11,7 +11,7 @@ class Product extends Model
     use Translatable;
     use HasFactory;
 
-    public $translatedAttributes = ['name', 'description'];
+    protected $translatedAttributes = ['name', 'description'];
     protected $guarded = [];
     protected $appends = ['profit_percent'];
 

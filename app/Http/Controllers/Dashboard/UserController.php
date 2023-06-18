@@ -38,7 +38,7 @@ class UserController extends Controller
 
     public function show()
     {
-        return view('page_errore.404');
+        return view('page_error.404');
     }
 
 

@@ -35,7 +35,11 @@ class DashboardController extends Controller
 
     public function show()
     {
-        return view('page_errore.404');
+        return view('page_error.404');
+    }
+
+    public function error403(){
+        return view('page_error.403');
     }
 
 }

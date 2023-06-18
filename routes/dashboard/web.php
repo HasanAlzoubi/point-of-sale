@@ -12,6 +12,7 @@ Route::group(
 
         //Dashboard routes
         Route::resource('', 'DashboardController');
+        Route::get('/403', 'DashboardController@error403');
 
         //users routes
         Route::resource('users', 'UserController');

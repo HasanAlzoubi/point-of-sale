@@ -23,7 +23,7 @@
             <div class="text">
                 <p>403</p>
                 <span>Sorry, you are forbidden from accessing this page</span>
-                <a href="#">GO HOME</a>
+                <a href="{{asset(route('dashboard.index'))}}">GO HOME</a>
             </div>
 
         </div>

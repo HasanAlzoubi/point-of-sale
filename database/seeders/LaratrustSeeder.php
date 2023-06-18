@@ -9,11 +9,6 @@ use Illuminate\Support\Facades\Config;
 
 class LaratrustSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         $this->truncateLaratrustTables();
@@ -38,6 +33,12 @@ class LaratrustSeeder extends Seeder
 //        'u' => 'update',
 //        'd' => 'delete',
 //    ],
+
+        // $config= [
+        //        'super_admin' => [
+        //            'users' => 'c,r,u,d',
+        //        ],
+        //    ],
         foreach ($config as $key => $modules) {
 
             // Create a new role
@@ -55,6 +56,12 @@ class LaratrustSeeder extends Seeder
 //                $modules = ['users' => 'c,r,u,d'],
                 foreach (explode(',', $value) as $perm) {
 
+                //$mapPermission= [
+                   //   'c' => 'create',
+                   //   'r' => 'read',
+                   //   'u' => 'update',
+                   //   'd' => 'delete',
+                   //  ],
                     $permissionValue = $mapPermission->get($perm);
 //                  $permissionValue =['create', 'read', 'update','delete']
 

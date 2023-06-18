@@ -78,8 +78,6 @@
     $("#show-password").click(function () {
 
         var x = document.getElementById("password");
-
-
         if (x.type === "password") {
             x.type = "text";
             // $("#show-password").className="glyphicon glyphicon-open lock";
